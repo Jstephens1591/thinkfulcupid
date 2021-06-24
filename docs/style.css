@@ -1,7 +1,7 @@
 /* -------  General Styles ------- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #6b1a22;
 }
 
@@ -33,7 +33,6 @@ section.alternate-background {
 
 main img {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 /* ---  Groups & Items --- */
@@ -66,17 +65,17 @@ header {
   color: #ecdbc9;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
 header nav ul {
   display: flex;
-  list-style: none;
-  justify-content: center;
 }
 
 header nav ul li {
   list-style-type: none;
-  display: flex;
-  list-style: none;
-  margin-bottom: 20px;
 }
 
 header nav ul li a {
@@ -98,11 +97,14 @@ form {
 
 form label {
   font-weight: bold;
-  text-align: left;
 }
 
-form select,
-form input {
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form select, form input {
   margin-bottom: 20px;
   width: 180px;
 }
@@ -116,10 +118,6 @@ form button {
   width: 100%;
 }
 
-form div {
-  display: flex;
-  justify-content: space-between;
-}
 /* -------  Footer ------- */
 
 footer {
@@ -133,47 +131,24 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 800px) {
 
-/* -------  Media Query Navigation ------- */
-
-    header {
+@media all and (min-width: 480px) {
+  header {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
   }
 
-  header .logo {
+  .logo {
+    margin: 14px 0 14px 20px;
     font-size: 42px;
-    margin: 14px 0;
-    padding-top: 6px;
   }
 
-  header nav {
-    margin-top: 14px;
-  }
-
-  header nav ul li a:hover {
-    color: #bdbdbd;
-  }
-
-  /* ---  Media Queury Groups & Items --- */
-
-  .group {
-    display: flex;
-    flex-direction: row;
+  header nav ul {
     align-items: center;
   }
-  
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
-  
-  .item-double {
-    flex: 2;
-    margin: 10px;
-  }
 
+  .group {
+    align-items: center;
+    flex-direction: row;
   }
-
