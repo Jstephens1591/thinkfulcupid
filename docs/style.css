@@ -140,7 +140,7 @@ footer p {
   .about {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
   }
   #about img {
     width: 30%;
