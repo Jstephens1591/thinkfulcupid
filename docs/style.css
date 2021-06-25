@@ -38,7 +38,17 @@ img {
   width: 100%;
   margin-bottom:10px;
 }
-
+/** ------ about ------- **/
+#about img{
+    flex: 1;
+    width:25%;
+    height:25%;
+    margin-right: 20px;
+    align-content:center
+  }
+  #about p{
+    flex: 3;
+  }
 /* ---  Groups & Items --- */
 
 .group {
