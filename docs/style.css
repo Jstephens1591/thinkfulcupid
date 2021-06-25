@@ -134,7 +134,7 @@ form button {
     width: 100%;
 }
 /* -------  About ------- */
-#about-block {
+#about{
     display: flex;
     flex-direction: row;
 }
