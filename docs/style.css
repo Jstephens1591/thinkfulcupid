@@ -94,13 +94,13 @@ header nav ul li a:hover {
     flex-direction: column;
 }
 #join img {
-    /* flex-grow: 2; */
+    
     width: 100%;
     margin-bottom: 10px;
-    /* flex: 2 100%; */
+   
 }
 #join form {
-    /* flex-grow: 1; */
+   
     flex: 1;
 }
 form {
@@ -169,7 +169,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-/* I know that assignment told to set min-width to 480px but in practice everything goes "wrong" around 1130px */
+
 @media all and (min-width: 480px) {
     /* -------  Navigation ------- */
     header {
