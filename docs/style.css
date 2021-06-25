@@ -173,7 +173,7 @@ footer p {
     align-content:center;
   }
   #about div{
-    flex-direction: row;
+    flex-direction: column;
     display:flex; 
   }
   #about p{
