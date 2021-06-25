@@ -96,13 +96,13 @@ header nav ul li a:hover {
     flex-direction: row;
 }
 #join img {
-    /* flex-grow: 2; */
+    flex-grow: 2; 
     width: 100%;
     margin-bottom: 10px;
-    /* flex: 2 100%; */
+    flex: 2 100%; 
 }
 #join form {
-    /* flex-grow: 1; */
+     flex-grow: 1; 
     flex: 1;
 }
 form {
