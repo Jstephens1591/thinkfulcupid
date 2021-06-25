@@ -93,7 +93,7 @@ header nav ul li a:hover {
 /* -------  Join Form ------- */
 #join {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 #join img {
     /* flex-grow: 2; */
@@ -182,7 +182,7 @@ footer p {
     #join {
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     #join img {
@@ -196,7 +196,7 @@ footer p {
     }
     /* ------- About ------- */
     #about-block {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     #about-block img {
