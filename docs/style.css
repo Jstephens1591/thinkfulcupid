@@ -44,7 +44,7 @@ img {
     width:25%;
     height:25%;
     margin-right: 20px;
-    align-content:center
+    align-content:center;
   }
   #about p{
     flex: 3;
@@ -138,8 +138,8 @@ form div p{
 }
 
 section{
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 /* -------  Footer ------- */
 
