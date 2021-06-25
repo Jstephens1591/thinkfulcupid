@@ -32,9 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: auto;
-  height: 215px;
-  padding: 10px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -52,11 +50,8 @@ main img {
 .item-double {
   flex: 2;
 }
-.row{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
+
+
 /* -------  Navigation ------- */
 
 header {
@@ -69,18 +64,30 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+  text-align: center;
+  margin: 0;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul {
   display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li {
   list-style-type: none;
-  padding-bottom: 10px;
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
-  padding: 0 20px 0px 0;
+  padding: 0 20px 0 0;
 }
 
 header nav ul li a:hover {
@@ -88,23 +95,32 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
-  display: flex;
-  flex-flow: column nowrap;
   padding: 10px;
 }
+
+.formrow {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 form label {
   font-weight: bold;
 }
 
+
+
 form select,
 form input {
-  justify-self: flex-end;
-  margin-bottom: 20px;
-  width: 180px;
+  margin: 10px;
+  width: 75%;
 }
 
 form button {
@@ -115,6 +131,12 @@ form button {
   padding: 15px;
   width: 100%;
 }
+
+.selectLabel {
+  
+  font-weight: bold;
+}
+
 
 /* -------  Footer ------- */
 
@@ -129,26 +151,27 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
 @media all and (min-width: 480px) {
-  header .group{
+  header {
+    display: flex;
     justify-content: space-between;
+    padding: 0;
   }
-  .logo{
-    font-size: 48px;
-    text-align: left;
+  
+  header nav ul  {
+    align-items:center;
   }
-  #join img{
-    height: 450px;
+    
+  .group {
+    display: flex;
+    flex-direction: row;
   }
-  #download img{
-    height: 450px;
-  }
-  .group{
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  #blog .group img{
-    height: 300px;
+
+  form select,
+  form input {
+    margin: 20px;
+    width: 180px;
   }
 
 }
