@@ -173,7 +173,7 @@ footer p {
     align-content:center;
   }
   #about div{
-    flex-direction: column;
+    flex-direction: column-reverse;
     display:flex; 
   }
   #about p{
